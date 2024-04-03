@@ -1,0 +1,19 @@
+
+model:
+  architecture:
+    - type: Dense
+      units: 1024
+      activation: relu
+      input_shape: [2388]  # Assuming 2388 input features
+    - type: Dense
+      units: 512
+      activation: relu
+    - type: Dense
+      units: 1  # Output layer for regression problem
+  
+  training_config:
+    optimizer: Adam
+    learning_rate: 0.001
+    loss_function: mean_squared_error
+    batch_size: 32
+    epochs: 100
