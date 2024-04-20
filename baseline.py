@@ -144,7 +144,7 @@ save_dir = './models/'
 if not os.path.exists(save_dir):
     os.makedirs(save_dir)
     
-model.save(os.path.join(save_dir, 'my_model.h5'))
+model.save(os.path.join(save_dir, 'baseline.h5'))
 
 # Plot and save the training history in the figures directory
 if not os.path.exists('./figures/'):

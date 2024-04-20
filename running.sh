@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=HPO_LSTM_FCN_R2
+#SBATCH --job-name=baseline
 #SBATCH --output=%x_%o.out
 #SBATCH --error=%x_%e.err
 #SBATCH --partition matador
@@ -12,4 +12,4 @@ conda activate tf-gpu-hpcc
 # pip install torch_geometric
 # conda install conda-forge::transformers
 
-python baseline.py
+time python second_model.py
